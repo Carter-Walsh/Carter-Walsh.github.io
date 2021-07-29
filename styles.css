@@ -35,12 +35,6 @@ nav {
     opacity: 0;
 }
 
-.to-project.btn {
-    opacity: 1;
-    border: 2px solid #000;
-    color: #000
-}
-
 .borderman {
     display: inline-block;
     position: relative;
@@ -87,6 +81,10 @@ nav {
     color: #F3A712;
 }
 
+.borderman.btn-border.to-projects-btn:hover {
+    color: #F3A712;
+}
+
 .borderman.btn-border:after {
     width: 100%;
     height: 0;
@@ -100,6 +98,13 @@ nav {
     border: 2px solid #D0E1D4;
     color: #D0E1D4;
     font-weight: 400;
+}
+
+.borderman.btn-border.to-projects-btn {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    opacity: .7;
 }
 
 @keyframes bg-animation {
@@ -172,22 +177,19 @@ nav {
 .about-me-text {
     font-size: 1.5rem;
     opacity: .7;
+    text-decoration: none;
+    color: #000;
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1150px) {
     .about-me-container {
         display: block;
         height: auto;
         text-align: center;
-        
     }
 
     .headshot {
         margin: 3rem auto;
-    }
-
-    .about-me-text {
-        padding-bottom: 3rem;
     }
 }
 
